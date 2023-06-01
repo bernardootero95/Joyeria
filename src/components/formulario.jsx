@@ -46,7 +46,51 @@ const Formulario = () => {
    
     return (
     <div className='container'>
-       <h1 className="text-center">JOYERIA BO</h1>
+      <h1 className="text-center">JOYERIA BO</h1>
+        <form >
+          <div className="form-group">
+            <label htmlFor="material">Material:</label>
+            <select className="form-control" id="material" value={material} onChange={(e) => setMaterial(e.target.value)}>
+              <option value="">Seleccione un material</option>
+              <option value="cuero">Cuero</option>
+              <option value="cuerda">Cuerda</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="dije">Dije:</label>
+            <select className="form-control" id="dije" value={dije} onChange={(e) => setDije(e.target.value)} >
+              <option value="">Seleccione un dije</option>
+              <option value="martillo">Martillo</option>
+              <option value="ancla">Ancla</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="tipo">Tipo:</label>
+            <select className="form-control" id="tipo" value={tipo} onChange={(e) => setTipo(e.target.value)} >
+              <option value="">Seleccione un tipo</option>
+              <option value="oro">Oro</option>
+              <option value="plata">Plata</option>
+              <option value="niquel">Niquel</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="cantidad">Cantidad:</label>
+            <input type="number" className="form-control" id="cantidad" value={cantidad} onChange={(e) => setCantidad(e.target.value)}/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="moneda">Moneda:</label>
+            <select className="form-control"  id="moneda" value={moneda} onChange={(e) => setMoneda(e.target.value)}>
+              <option value="">Seleccione una moneda</option>
+              <option value="dolares">Dólares</option>
+              <option value="pesos">Pesos</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="valorAPagar">Valor a pagar:</label>
+            <input type="text" className="form-control" id="valorAPagar" value={valorAPagar} disabled />
+          </div>
+          <button type="submit" className="btn btn-primary">Realizar compra</button>
+        </form>
     </div>
         
   
