@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Formulario from './components/Formulario'
 import './index.css'
+import Formulario from './components/Formulario'
+
 
 
 
