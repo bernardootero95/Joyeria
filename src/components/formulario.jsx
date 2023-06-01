@@ -45,8 +45,9 @@ const Formulario = () => {
     
    
     return (
-    <div className='container'>
-      <h1 className="text-center">JOYERIA BO</h1>
+    <div className='container d-flex justify-content-center align-items-center my-5'>
+      <div className='formulario-container'>
+        <h1 className="text-center">JOYERIA BO</h1>
         <form >
           <div className="form-group">
             <label htmlFor="material">Material:</label>
@@ -89,8 +90,8 @@ const Formulario = () => {
             <label htmlFor="valorAPagar">Valor a pagar:</label>
             <input type="text" className="form-control" id="valorAPagar" value={valorAPagar} disabled />
           </div>
-          <button type="submit" className="btn btn-primary">Realizar compra</button>
         </form>
+      </div>
     </div>
         
   
