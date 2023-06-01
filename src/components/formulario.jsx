@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const formulario = () => {
+const Formulario = () => {
     const [material, setMaterial] = useState('')
     const [dije, setDije] = useState('')
     const [tipo, setTipo] = useState('')
@@ -21,7 +21,10 @@ const formulario = () => {
   
   
     return (
-    <div>formulario</div>
+    <div className='container mt-5'>
+        <h1 className='text-center'> JOYERIA BO </h1>
+        
+    </div>
         
   
   
@@ -31,4 +34,4 @@ const formulario = () => {
 
 
 
-export default formulario
+export default Formulario
