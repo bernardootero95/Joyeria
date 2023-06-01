@@ -47,7 +47,7 @@ const Formulario = () => {
     return (
     <div className='container d-flex justify-content-center align-items-center my-5'>
       <div className='formulario-container'>
-        <h1 className="text-center">JOYERIA BO</h1>
+        <h1 className="text-center">JOYERIA  BO</h1>
         <form >
           <div className="form-group">
             <label htmlFor="material">Material:</label>
