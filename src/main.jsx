@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Formulario from './components/Formulario'
 import './index.css'
 import Form2 from './components/Form2'
 
